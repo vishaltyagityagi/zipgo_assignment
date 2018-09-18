@@ -1,0 +1,65 @@
+A = How we can run this project ================================>>>>>>>>>
+
+  1 - Go into project directory
+  2- bundle
+  3 rake db:create
+  4 - rake db:migrate
+  5 - rails s
+
+  To upload csv file please find this into your root directories [urls.csv]
+  access now localhost:3000
+
+............................................................................
+ ..........................................................................''
+B = Balanced string program is been attached named zipgo_balanced_string.rb
+  To run this program  =>>
+  ruby  zipgo_balanced_string.rb
+
+C = API DUCUMENTATION ===========================================>>>>>>>>
+
+  1) Creating a shortened:-
+    Request Type :- POST
+    Endpoint:- /shorteners
+    Body :- {"shortener": {"url": "google.com" } }
+
+    Response:-
+      [
+        {
+            "id": 1,
+            "url": "google.com",
+            "shorten_url": "jSdeYz",
+            "sanitized_url": "http://google.com"
+        }
+    ]
+
+  2) Fetching list
+  Request Type :- GET
+  Endpoint:- /shorteners
+  Response:-
+    [
+        {
+            "id": 10,
+            "url": "google.com",
+            "shorten_url": "jSdeYz",
+            "sanitized_url": "http://google.com"
+        }
+    ]
+
+
+  3) Fetching original url from a shortened url:-
+
+  Request Type :- GET
+
+  Endpoint:- localhost:3000/shortners/original_url?shorten_url=SZU00S
+
+  Response:-
+
+    {
+      "original_url": "google.com"
+    }
+
+  4) Deleting shortened-urls:-
+
+  Request Type :- DELETE
+
+  Endpoint:- /shortners/{:id}
