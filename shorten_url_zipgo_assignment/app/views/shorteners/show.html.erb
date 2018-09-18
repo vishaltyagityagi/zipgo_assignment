@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>Show table</h2>
+  <p id="notice">
+    <%= notice %>
+  </p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>URL</th>
+        <th>Shorten url</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <%= @shortener.url %>
+        </td>
+        <td>
+          <%= link_to "#{request.base_url}/#{@shortener.shorten_url}",  "#{request.base_url}/#{@shortener.shorten_url}", target: "_blank" %>
+        </td>
+        <td>
+          <%= link_to 'Edit', edit_shortener_path(@shortener) %>
+          |
+          \#{link_to 'Back', shorteners_path}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

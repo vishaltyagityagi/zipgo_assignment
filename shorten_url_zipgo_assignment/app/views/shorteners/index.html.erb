@@ -1,0 +1,35 @@
+<p id="notice">
+  <%= notice %>
+</p>
+<h1>List of all Urls</h1>
+<div class="container">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Url</th>
+        <th>Shorten url</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @shorteners.each do |shortener| %>
+        <tr>
+          <td>
+            <%= shortener.url %>
+          </td>
+          <td>
+            <%= link_to "#{request.base_url}/#{shortener.shorten_url}",  "#{request.base_url}/#{shortener.shorten_url}", target: "_blank" %>
+          </td>
+          <td>
+            <%= link_to 'Show', shortener %>
+            |
+            \#{link_to 'Edit', edit_shortener_path(shortener)} |
+            \#{link_to 'Destroy', shortener, method: :delete, data: { confirm: 'Are you sure?' }}
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<br/>
+<%= link_to 'New Shortener', new_shortener_path, class: "btn btn-info", role: "button" %>

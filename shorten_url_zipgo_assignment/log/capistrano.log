@@ -1,0 +1,1136 @@
+# Logfile created on 2018-08-14 17:00:36 +0530 by logger.rb/54362
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-14 17:00:36 +0530 cap staging deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f6837f23] Running [ -d ~/.rvm ] as ubuntu@18.191.255.97
+ DEBUG [f6837f23] Command: [ -d ~/.rvm ]
+ DEBUG [168ac892] Finished in 3.968 seconds with exit status 0 (successful).
+ DEBUG [af0e0d27] Running ~/.rvm/bin/rvm version as ubuntu@18.191.255.97
+ DEBUG [af0e0d27] Command: ~/.rvm/bin/rvm version
+ DEBUG [34c378b0] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [34c378b0] 	
+ DEBUG [34c378b0] Finished in 1.534 seconds with exit status 0 (successful).
+ DEBUG [81d8c6ab] Running ~/.rvm/bin/rvm current as ubuntu@18.191.255.97
+ DEBUG [81d8c6ab] Command: ~/.rvm/bin/rvm current
+ DEBUG [cc3cb421] 	ruby-2.4.1
+ DEBUG [cc3cb421] 	
+ DEBUG [cc3cb421] Finished in 1.154 seconds with exit status 0 (successful).
+ DEBUG [da610b49] Running ~/.rvm/bin/rvm default do ruby --version as ubuntu@18.191.255.97
+ DEBUG [da610b49] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [b4435e6e] 	ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+ DEBUG [b4435e6e] 	
+ DEBUG [b4435e6e] Finished in 1.372 seconds with exit status 0 (successful).
+  INFO [51793673] Running /usr/bin/env mkdir -p /tmp as ubuntu@18.191.255.97
+ DEBUG [51793673] Command: /usr/bin/env mkdir -p /tmp
+  INFO [bf8cd3e3] Finished in 1.003 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-shorten_url-staging-nikhilagarwal.sh 0.0%
+  INFO Uploading /tmp/git-ssh-shorten_url-staging-nikhilagarwal.sh 100.0%
+  INFO [1a90ee1c] Running /usr/bin/env chmod 700 /tmp/git-ssh-shorten_url-staging-nikhilagarwal.sh as ubuntu@18.191.255.97
+ DEBUG [1a90ee1c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-shorten_url-staging-nikhilagarwal.sh
+  INFO [aefad4b4] Finished in 1.004 seconds with exit status 0 (successful).
+  INFO [e104d272] Running /usr/bin/env git ls-remote https://github.com/nikhilagarwal1/shorten_url.git HEAD as ubuntu@18.191.255.97
+ DEBUG [e104d272] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-shorten_url-staging-nikhilagarwal.sh" ; /usr/bin/env git ls-remote https://github.com/nikhilagarwal1/shorten_url.git HEAD )
+ DEBUG [bf0a1b6b] 	b04704410eac5a4e9e0bf3e4a3feb7ddc5fca201
+ DEBUG [bf0a1b6b] 		HEAD
+  INFO [bf0a1b6b] Finished in 1.248 seconds with exit status 0 (successful).
+  INFO [fe5504d5] Running /usr/bin/env mkdir -p /var/deploy/shorten_url/shared /var/deploy/shorten_url/releases as ubuntu@18.191.255.97
+ DEBUG [fe5504d5] Command: /usr/bin/env mkdir -p /var/deploy/shorten_url/shared /var/deploy/shorten_url/releases
+  INFO [59e8cc42] Finished in 1.001 seconds with exit status 0 (successful).
+  INFO [69cbec6f] Running /usr/bin/env mkdir -p /var/deploy/shorten_url/shared/log /var/deploy/shorten_url/shared/tmp/pids /var/deploy/shorten_url/shared/tmp/cache /var/deploy/shorten_url/shared/tmp/sockets /var/deploy/shorten_url/shared/public/system /var/deploy/shorten_url/shared/public/uploads /var/deploy/shorten_url/shared/public/assets as ubuntu@18.191.255.97
+ DEBUG [69cbec6f] Command: /usr/bin/env mkdir -p /var/deploy/shorten_url/shared/log /var/deploy/shorten_url/shared/tmp/pids /var/deploy/shorten_url/shared/tmp/cache /var/deploy/shorten_url/shared/tmp/sockets /var/deploy/shorten_url/shared/public/system /var/deploy/shorten_url/shared/public/uploads /var/deploy/shorten_url/shared/public/assets
+  INFO [62c8f5c6] Finished in 0.997 seconds with exit status 0 (successful).
+ DEBUG [4761aa37] Running [ -f /var/deploy/shorten_url/shared/puma.rb ] as ubuntu@18.191.255.97
+ DEBUG [4761aa37] Command: [ -f /var/deploy/shorten_url/shared/puma.rb ]
+ DEBUG [405d848f] Finished in 1.000 seconds with exit status 1 (failed).
+  WARN puma.rb NOT FOUND!
+ DEBUG Uploading /var/deploy/shorten_url/shared/puma.rb 0.0%
+  INFO Uploading /var/deploy/shorten_url/shared/puma.rb 100.0%
+  INFO puma.rb generated
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-14 17:02:20 +0530 cap staging puma:config
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0a891c4d] Running [ -d ~/.rvm ] as ubuntu@18.191.255.97
+ DEBUG [0a891c4d] Command: [ -d ~/.rvm ]
+ DEBUG [a0aaf3e0] Finished in 4.046 seconds with exit status 0 (successful).
+ DEBUG [da6a238c] Running ~/.rvm/bin/rvm version as ubuntu@18.191.255.97
+ DEBUG [da6a238c] Command: ~/.rvm/bin/rvm version
+ DEBUG [50634b4c] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [50634b4c] 	
+ DEBUG [50634b4c] Finished in 1.176 seconds with exit status 0 (successful).
+ DEBUG [cb77ba78] Running ~/.rvm/bin/rvm current as ubuntu@18.191.255.97
+ DEBUG [cb77ba78] Command: ~/.rvm/bin/rvm current
+ DEBUG [849f5f99] 	ruby-2.4.1
+ DEBUG [849f5f99] 	
+ DEBUG [849f5f99] Finished in 1.179 seconds with exit status 0 (successful).
+ DEBUG [aca7f338] Running ~/.rvm/bin/rvm default do ruby --version as ubuntu@18.191.255.97
+ DEBUG [aca7f338] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [b7a961ce] 	ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+ DEBUG [b7a961ce] 	
+ DEBUG [b7a961ce] Finished in 1.289 seconds with exit status 0 (successful).
+ DEBUG Uploading /var/deploy/shorten_url/shared/puma.rb 0.0%
+  INFO Uploading /var/deploy/shorten_url/shared/puma.rb 100.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-14 17:03:33 +0530 cap staging puma:config
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ef281d52] Running [ -d ~/.rvm ] as ubuntu@18.191.255.97
+ DEBUG [ef281d52] Command: [ -d ~/.rvm ]
+ DEBUG [8030c514] Finished in 4.939 seconds with exit status 0 (successful).
+ DEBUG [beb60656] Running ~/.rvm/bin/rvm version as ubuntu@18.191.255.97
+ DEBUG [beb60656] Command: ~/.rvm/bin/rvm version
+ DEBUG [84f7513c] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [84f7513c] 	
+ DEBUG [84f7513c] Finished in 1.308 seconds with exit status 0 (successful).
+ DEBUG [6dd8be93] Running ~/.rvm/bin/rvm current as ubuntu@18.191.255.97
+ DEBUG [6dd8be93] Command: ~/.rvm/bin/rvm current
+ DEBUG [93277f1e] 	ruby-2.4.1
+ DEBUG [93277f1e] 	
+ DEBUG [93277f1e] Finished in 1.429 seconds with exit status 0 (successful).
+ DEBUG [3defac36] Running ~/.rvm/bin/rvm default do ruby --version as ubuntu@18.191.255.97
+ DEBUG [3defac36] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [9b16d41a] 	ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+ DEBUG [9b16d41a] 	
+ DEBUG [9b16d41a] Finished in 1.330 seconds with exit status 0 (successful).
+ DEBUG Uploading /var/deploy/shorten_url/shared/puma.rb 0.0%
+  INFO Uploading /var/deploy/shorten_url/shared/puma.rb 100.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-14 17:04:12 +0530 cap staging puma:config
+  INFO ---------------------------------------------------------------------------
+ DEBUG [1f9e1d26] Running [ -d ~/.rvm ] as ubuntu@18.191.255.97
+ DEBUG [1f9e1d26] Command: [ -d ~/.rvm ]
+ DEBUG [048be568] Finished in 4.265 seconds with exit status 0 (successful).
+ DEBUG [2a198df2] Running ~/.rvm/bin/rvm version as ubuntu@18.191.255.97
+ DEBUG [2a198df2] Command: ~/.rvm/bin/rvm version
+ DEBUG [49cda336] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [49cda336] 	
+ DEBUG [49cda336] Finished in 1.204 seconds with exit status 0 (successful).
+ DEBUG [d3e9a033] Running ~/.rvm/bin/rvm current as ubuntu@18.191.255.97
+ DEBUG [d3e9a033] Command: ~/.rvm/bin/rvm current
+ DEBUG [948bcaa8] 	ruby-2.4.1
+ DEBUG [948bcaa8] 	
+ DEBUG [948bcaa8] Finished in 1.204 seconds with exit status 0 (successful).
+ DEBUG [00401d7e] Running ~/.rvm/bin/rvm default do ruby --version as ubuntu@18.191.255.97
+ DEBUG [00401d7e] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [08c495a4] 	ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+ DEBUG [08c495a4] 	
+ DEBUG [08c495a4] Finished in 1.298 seconds with exit status 0 (successful).
+ DEBUG Uploading /var/deploy/shorten_url/shared/puma.rb 0.0%
+  INFO Uploading /var/deploy/shorten_url/shared/puma.rb 100.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-14 17:04:56 +0530 cap staging puma:config
+  INFO ---------------------------------------------------------------------------
+ DEBUG [40ea4441] Running [ -d ~/.rvm ] as ubuntu@18.191.255.97
+ DEBUG [40ea4441] Command: [ -d ~/.rvm ]
+ DEBUG [193bfb7b] Finished in 5.212 seconds with exit status 0 (successful).
+ DEBUG [d75090e0] Running ~/.rvm/bin/rvm version as ubuntu@18.191.255.97
+ DEBUG [d75090e0] Command: ~/.rvm/bin/rvm version
+ DEBUG [3d182c08] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [3d182c08] 	
+ DEBUG [3d182c08] Finished in 1.337 seconds with exit status 0 (successful).
+ DEBUG [660e1cb9] Running ~/.rvm/bin/rvm current as ubuntu@18.191.255.97
+ DEBUG [660e1cb9] Command: ~/.rvm/bin/rvm current
+ DEBUG [9e7fc77c] 	ruby-2.4.1
+ DEBUG [9e7fc77c] 	
+ DEBUG [9e7fc77c] Finished in 1.294 seconds with exit status 0 (successful).
+ DEBUG [65f5f768] Running ~/.rvm/bin/rvm default do ruby --version as ubuntu@18.191.255.97
+ DEBUG [65f5f768] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [a9596dda] 	ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+ DEBUG [a9596dda] 	
+ DEBUG [a9596dda] Finished in 1.530 seconds with exit status 0 (successful).
+ DEBUG Uploading /var/deploy/shorten_url/shared/puma.rb 0.0%
+  INFO Uploading /var/deploy/shorten_url/shared/puma.rb 100.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-14 17:06:26 +0530 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [918bf182] Running [ -d ~/.rvm ] as ubuntu@18.191.255.97
+ DEBUG [918bf182] Command: [ -d ~/.rvm ]
+ DEBUG [97ab0786] Finished in 4.645 seconds with exit status 0 (successful).
+ DEBUG [651c78a2] Running ~/.rvm/bin/rvm version as ubuntu@18.191.255.97
+ DEBUG [651c78a2] Command: ~/.rvm/bin/rvm version
+ DEBUG [8861ce25] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [8861ce25] 	
+ DEBUG [8861ce25] Finished in 1.315 seconds with exit status 0 (successful).
+ DEBUG [79a5e8e4] Running ~/.rvm/bin/rvm current as ubuntu@18.191.255.97
+ DEBUG [79a5e8e4] Command: ~/.rvm/bin/rvm current
+ DEBUG [7e61cf8c] 	ruby-2.4.1
+ DEBUG [7e61cf8c] 	
+ DEBUG [7e61cf8c] Finished in 1.344 seconds with exit status 0 (successful).
+ DEBUG [fd7f8b8d] Running ~/.rvm/bin/rvm default do ruby --version as ubuntu@18.191.255.97
+ DEBUG [fd7f8b8d] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [b98da46c] 	ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+ DEBUG [b98da46c] 	
+ DEBUG [b98da46c] Finished in 1.412 seconds with exit status 0 (successful).
+  INFO [5f6b25d1] Running /usr/bin/env mkdir -p /tmp as ubuntu@18.191.255.97
+ DEBUG [5f6b25d1] Command: /usr/bin/env mkdir -p /tmp
+  INFO [6fb76af7] Finished in 1.246 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-shorten_url-production-nikhilagarwal.sh 0.0%
+  INFO Uploading /tmp/git-ssh-shorten_url-production-nikhilagarwal.sh 100.0%
+  INFO [0e432778] Running /usr/bin/env chmod 700 /tmp/git-ssh-shorten_url-production-nikhilagarwal.sh as ubuntu@18.191.255.97
+ DEBUG [0e432778] Command: /usr/bin/env chmod 700 /tmp/git-ssh-shorten_url-production-nikhilagarwal.sh
+  INFO [4214f357] Finished in 1.233 seconds with exit status 0 (successful).
+  INFO [b2309d56] Running /usr/bin/env git ls-remote https://github.com/nikhilagarwal1/shorten_url.git HEAD as ubuntu@18.191.255.97
+ DEBUG [b2309d56] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-shorten_url-production-nikhilagarwal.sh" ; /usr/bin/env git ls-remote https://github.com/nikhilagarwal1/shorten_url.git HEAD )
+ DEBUG [8ef0ceba] 	b04704410eac5a4e9e0bf3e4a3feb7ddc5fca201
+ DEBUG [8ef0ceba] 		HEAD
+  INFO [8ef0ceba] Finished in 1.337 seconds with exit status 0 (successful).
+  INFO [25f7ef7f] Running /usr/bin/env mkdir -p /var/deploy/shorten_url/shared /var/deploy/shorten_url/releases as ubuntu@18.191.255.97
+ DEBUG [25f7ef7f] Command: /usr/bin/env mkdir -p /var/deploy/shorten_url/shared /var/deploy/shorten_url/releases
+  INFO [a77e7878] Finished in 1.115 seconds with exit status 0 (successful).
+  INFO [1b9c01e3] Running /usr/bin/env mkdir -p /var/deploy/shorten_url/shared/log /var/deploy/shorten_url/shared/tmp/pids /var/deploy/shorten_url/shared/tmp/cache /var/deploy/shorten_url/shared/tmp/sockets /var/deploy/shorten_url/shared/public/system /var/deploy/shorten_url/shared/public/uploads /var/deploy/shorten_url/shared/public/assets as ubuntu@18.191.255.97
+ DEBUG [1b9c01e3] Command: /usr/bin/env mkdir -p /var/deploy/shorten_url/shared/log /var/deploy/shorten_url/shared/tmp/pids /var/deploy/shorten_url/shared/tmp/cache /var/deploy/shorten_url/shared/tmp/sockets /var/deploy/shorten_url/shared/public/system /var/deploy/shorten_url/shared/public/uploads /var/deploy/shorten_url/shared/public/assets
+  INFO [20fba6f2] Finished in 1.220 seconds with exit status 0 (successful).
+ DEBUG [2e54bfe7] Running [ -f /var/deploy/shorten_url/shared/puma.rb ] as ubuntu@18.191.255.97
+ DEBUG [2e54bfe7] Command: [ -f /var/deploy/shorten_url/shared/puma.rb ]
+ DEBUG [976c4bac] Finished in 1.223 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-14 17:07:04 +0530 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a714c232] Running [ -d ~/.rvm ] as ubuntu@18.191.255.97
+ DEBUG [a714c232] Command: [ -d ~/.rvm ]
+ DEBUG [d128f790] Finished in 5.971 seconds with exit status 0 (successful).
+ DEBUG [de03f2bc] Running ~/.rvm/bin/rvm version as ubuntu@18.191.255.97
+ DEBUG [de03f2bc] Command: ~/.rvm/bin/rvm version
+ DEBUG [c5a6ebad] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [c5a6ebad] 	
+ DEBUG [c5a6ebad] Finished in 1.642 seconds with exit status 0 (successful).
+ DEBUG [58334ee0] Running ~/.rvm/bin/rvm current as ubuntu@18.191.255.97
+ DEBUG [58334ee0] Command: ~/.rvm/bin/rvm current
+ DEBUG [0e6ec116] 	ruby-2.4.1
+ DEBUG [0e6ec116] 	
+ DEBUG [0e6ec116] Finished in 1.570 seconds with exit status 0 (successful).
+ DEBUG [c5484115] Running ~/.rvm/bin/rvm default do ruby --version as ubuntu@18.191.255.97
+ DEBUG [c5484115] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [cd3a4773] 	ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+ DEBUG [cd3a4773] 	
+ DEBUG [cd3a4773] Finished in 1.332 seconds with exit status 0 (successful).
+ DEBUG Uploading /var/deploy/shorten_url/shared/puma.rb 0.0%
+  INFO Uploading /var/deploy/shorten_url/shared/puma.rb 100.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-14 17:07:51 +0530 cap production puma:nginx_config
+  INFO ---------------------------------------------------------------------------
+ DEBUG [54458ac3] Running [ -d ~/.rvm ] as ubuntu@18.191.255.97
+ DEBUG [54458ac3] Command: [ -d ~/.rvm ]
+ DEBUG [41a9080f] Finished in 4.183 seconds with exit status 0 (successful).
+ DEBUG [25eed190] Running ~/.rvm/bin/rvm version as ubuntu@18.191.255.97
+ DEBUG [25eed190] Command: ~/.rvm/bin/rvm version
+ DEBUG [b81f8062] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [b81f8062] 	
+ DEBUG [b81f8062] Finished in 1.163 seconds with exit status 0 (successful).
+ DEBUG [a92d8498] Running ~/.rvm/bin/rvm current as ubuntu@18.191.255.97
+ DEBUG [a92d8498] Command: ~/.rvm/bin/rvm current
+ DEBUG [3dc68294] 	ruby-2.4.1
+ DEBUG [3dc68294] 	
+ DEBUG [3dc68294] Finished in 1.588 seconds with exit status 0 (successful).
+ DEBUG [8da1769d] Running ~/.rvm/bin/rvm default do ruby --version as ubuntu@18.191.255.97
+ DEBUG [8da1769d] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [713a960b] 	ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+ DEBUG [713a960b] 	
+ DEBUG [713a960b] Finished in 1.341 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/nginx_shorten_url_production 0.0%
+  INFO Uploading /tmp/nginx_shorten_url_production 100.0%
+  INFO [03d25431] Running /usr/bin/env sudo mv /tmp/nginx_shorten_url_production /etc/nginx/sites-available/shorten_url_production as ubuntu@18.191.255.97
+ DEBUG [03d25431] Command: /usr/bin/env sudo mv /tmp/nginx_shorten_url_production /etc/nginx/sites-available/shorten_url_production
+  INFO [bba8a52c] Finished in 1.042 seconds with exit status 0 (successful).
+  INFO [7858fae3] Running /usr/bin/env sudo ln -fs /etc/nginx/sites-available/shorten_url_production /etc/nginx/sites-enabled/shorten_url_production as ubuntu@18.191.255.97
+ DEBUG [7858fae3] Command: /usr/bin/env sudo ln -fs /etc/nginx/sites-available/shorten_url_production /etc/nginx/sites-enabled/shorten_url_production
+  INFO [af8e3a07] Finished in 1.004 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-14 17:09:55 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [faeadbae] Running [ -d ~/.rvm ] as ubuntu@18.191.255.97
+ DEBUG [faeadbae] Command: [ -d ~/.rvm ]
+ DEBUG [04fa7aec] Finished in 4.734 seconds with exit status 0 (successful).
+ DEBUG [0592cf64] Running ~/.rvm/bin/rvm version as ubuntu@18.191.255.97
+ DEBUG [0592cf64] Command: ~/.rvm/bin/rvm version
+ DEBUG [b211f0a9] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [b211f0a9] 	
+ DEBUG [b211f0a9] Finished in 1.595 seconds with exit status 0 (successful).
+ DEBUG [4c0a5a35] Running ~/.rvm/bin/rvm current as ubuntu@18.191.255.97
+ DEBUG [4c0a5a35] Command: ~/.rvm/bin/rvm current
+ DEBUG [b5f851d5] 	ruby-2.4.1
+ DEBUG [b5f851d5] 	
+ DEBUG [b5f851d5] Finished in 1.209 seconds with exit status 0 (successful).
+ DEBUG [730f2274] Running ~/.rvm/bin/rvm default do ruby --version as ubuntu@18.191.255.97
+ DEBUG [730f2274] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [97eb250c] 	ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+ DEBUG [97eb250c] 	
+ DEBUG [97eb250c] Finished in 2.013 seconds with exit status 0 (successful).
+  INFO [be0d56ed] Running /usr/bin/env mkdir -p /tmp as ubuntu@18.191.255.97
+ DEBUG [be0d56ed] Command: /usr/bin/env mkdir -p /tmp
+  INFO [50917908] Finished in 0.989 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-shorten_url-production-nikhilagarwal.sh 0.0%
+  INFO Uploading /tmp/git-ssh-shorten_url-production-nikhilagarwal.sh 100.0%
+  INFO [e7a2679f] Running /usr/bin/env chmod 700 /tmp/git-ssh-shorten_url-production-nikhilagarwal.sh as ubuntu@18.191.255.97
+ DEBUG [e7a2679f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-shorten_url-production-nikhilagarwal.sh
+  INFO [1f6e518d] Finished in 1.432 seconds with exit status 0 (successful).
+  INFO [490ab5ee] Running /usr/bin/env git ls-remote https://github.com/nikhilagarwal1/shorten_url.git HEAD as ubuntu@18.191.255.97
+ DEBUG [490ab5ee] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-shorten_url-production-nikhilagarwal.sh" ; /usr/bin/env git ls-remote https://github.com/nikhilagarwal1/shorten_url.git HEAD )
+ DEBUG [23c283b3] 	b04704410eac5a4e9e0bf3e4a3feb7ddc5fca201
+ DEBUG [23c283b3] 		HEAD
+  INFO [23c283b3] Finished in 1.085 seconds with exit status 0 (successful).
+  INFO [94076479] Running /usr/bin/env mkdir -p /var/deploy/shorten_url/shared /var/deploy/shorten_url/releases as ubuntu@18.191.255.97
+ DEBUG [94076479] Command: /usr/bin/env mkdir -p /var/deploy/shorten_url/shared /var/deploy/shorten_url/releases
+  INFO [12fd4c40] Finished in 1.019 seconds with exit status 0 (successful).
+  INFO [a1553289] Running /usr/bin/env mkdir -p /var/deploy/shorten_url/shared/log /var/deploy/shorten_url/shared/tmp/pids /var/deploy/shorten_url/shared/tmp/cache /var/deploy/shorten_url/shared/tmp/sockets /var/deploy/shorten_url/shared/public/system /var/deploy/shorten_url/shared/public/uploads /var/deploy/shorten_url/shared/public/assets as ubuntu@18.191.255.97
+ DEBUG [a1553289] Command: /usr/bin/env mkdir -p /var/deploy/shorten_url/shared/log /var/deploy/shorten_url/shared/tmp/pids /var/deploy/shorten_url/shared/tmp/cache /var/deploy/shorten_url/shared/tmp/sockets /var/deploy/shorten_url/shared/public/system /var/deploy/shorten_url/shared/public/uploads /var/deploy/shorten_url/shared/public/assets
+  INFO [97509c9d] Finished in 1.010 seconds with exit status 0 (successful).
+ DEBUG [e800b0c4] Running [ -f /var/deploy/shorten_url/shared/puma.rb ] as ubuntu@18.191.255.97
+ DEBUG [e800b0c4] Command: [ -f /var/deploy/shorten_url/shared/puma.rb ]
+ DEBUG [2deedd6c] Finished in 1.021 seconds with exit status 0 (successful).
+ DEBUG [4dac1fec] Running [ -f /var/deploy/shorten_url/current/REVISION ] as ubuntu@18.191.255.97
+ DEBUG [4dac1fec] Command: [ -f /var/deploy/shorten_url/current/REVISION ]
+ DEBUG [95313bca] Finished in 1.049 seconds with exit status 1 (failed).
+ DEBUG [7943e45c] Running [ -f /var/deploy/shorten_url/repo/HEAD ] as ubuntu@18.191.255.97
+ DEBUG [7943e45c] Command: [ -f /var/deploy/shorten_url/repo/HEAD ]
+ DEBUG [40c2783f] Finished in 1.145 seconds with exit status 1 (failed).
+ DEBUG [774b6385] Running if test ! -d /var/deploy/shorten_url; then echo "Directory does not exist '/var/deploy/shorten_url'" 1>&2; false; fi as ubuntu@18.191.255.97
+ DEBUG [774b6385] Command: if test ! -d /var/deploy/shorten_url; then echo "Directory does not exist '/var/deploy/shorten_url'" 1>&2; false; fi
+ DEBUG [477c09b8] Finished in 1.345 seconds with exit status 0 (successful).
+  INFO [11d3860d] Running /usr/bin/env git clone --mirror https://github.com/nikhilagarwal1/shorten_url.git /var/deploy/shorten_url/repo as ubuntu@18.191.255.97
+ DEBUG [11d3860d] Command: cd /var/deploy/shorten_url && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-shorten_url-production-nikhilagarwal.sh" ; /usr/bin/env git clone --mirror https://github.com/nikhilagarwal1/shorten_url.git /var/deploy/shorten_url/repo )
+ DEBUG [a9f58440] 	Cloning into bare repository '/var/deploy/shorten_url/repo'...
+ DEBUG [a9f58440] 	
+ DEBUG [a9f58440] 	remote: Counting objects: 329, done.[K
+ DEBUG [a9f58440] 	
+ DEBUG [a9f58440] 	remote: Compressing objects:   0% (1/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:   1% (3/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:   2% (6/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objec
+ DEBUG [a9f58440] 	ts:   3% (9/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:   4% (11/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:   5% (14/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:   6% (17/26
+ DEBUG [a9f58440] 	9)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:   7% (19/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:   8% (22/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:   9% (25/269)   [K
+ DEBUG [a9f58440] 	remote: Compress
+ DEBUG [a9f58440] 	ing objects:  10% (27/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  11% (30/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  12% (33/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  
+ DEBUG [a9f58440] 	13% (35/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  14% (38/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  15% (41/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  16% (44/269)  
+ DEBUG [a9f58440] 	 [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  17% (46/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  18% (49/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  19% (52/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing 
+ DEBUG [a9f58440] 	objects:  20% (54/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  21% (57/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  22% (60/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  23% 
+ DEBUG [a9f58440] 	(62/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  24% (65/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  25% (68/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  26% (70/269)   [K
+ DEBUG [a9f58440] 	remote: Co
+ DEBUG [a9f58440] 	mpressing objects:  27% (73/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  28% (76/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  29% (79/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing obje
+ DEBUG [a9f58440] 	cts:  30% (81/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  31% (84/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  32% (87/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  33% (89/
+ DEBUG [a9f58440] 	269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  34% (92/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  35% (95/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  36% (97/269)   [K
+ DEBUG [a9f58440] 	remote: Compre
+ DEBUG [a9f58440] 	ssing objects:  37% (100/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  38% (103/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  39% (105/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objec
+ DEBUG [a9f58440] 	ts:  40% (108/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  41% (111/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  42% (113/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  43% (1
+ DEBUG [a9f58440] 	16/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  44% (119/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  45% (122/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  46% (124/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  47% (127/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  48% (130/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  49% (132/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  50% (135/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  51% (138/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  52% (140/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  53% (143/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  54% (146/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  55% (148/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  56% (151/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  57% (154/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing
+ DEBUG [a9f58440] 	 objects:  58% (157/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  59% (159/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  60% (162/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  
+ DEBUG [a9f58440] 	61% (165/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  62% (167/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  63% (170/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  64% (173/26
+ DEBUG [a9f58440] 	9)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  65% (175/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  66% (178/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  67% (181/269)   [K
+ DEBUG [a9f58440] 	remote: Compr
+ DEBUG [a9f58440] 	essing objects:  68% (183/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  69% (186/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  70% (189/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing obje
+ DEBUG [a9f58440] 	cts:  71% (191/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  72% (194/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  73% (197/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  74% (
+ DEBUG [a9f58440] 	200/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  75% (202/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  76% (205/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  77% (208/269)   
+ DEBUG [a9f58440] 	[K
+ DEBUG [a9f58440] 	remote: Compressing objects:  78% (210/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  79% (213/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  80% (216/269)   [K
+ DEBUG [a9f58440] 	remote: Compressin
+ DEBUG [a9f58440] 	g objects:  81% (218/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  82% (221/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  83% (224/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects: 
+ DEBUG [a9f58440] 	 84% (226/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  85% (229/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  86% (232/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  87% (235/2
+ DEBUG [a9f58440] 	69)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  88% (237/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  89% (240/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  90% (243/269)   [K
+ DEBUG [a9f58440] 	remote: Comp
+ DEBUG [a9f58440] 	ressing objects:  91% (245/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  92% (248/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  93% (251/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing obj
+ DEBUG [a9f58440] 	ects:  94% (253/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  95% (256/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  96% (259/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  97% 
+ DEBUG [a9f58440] 	(261/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  98% (264/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects:  99% (267/269)   [K
+ DEBUG [a9f58440] 	remote: Compressing objects: 100% (269/269)  
+ DEBUG [a9f58440] 	 [K
+ DEBUG [a9f58440] 	remote: Compressing objects: 100% (269/269), done.[K
+ DEBUG [a9f58440] 	
+ DEBUG [a9f58440] 	Receiving objects:   0% (1/329)   
+ DEBUG [a9f58440] 	Receiving objects:   1% (4/329)   
+ DEBUG [a9f58440] 	Receiving objects:   2% (7/329)   
+ DEBUG [a9f58440] 	Receiving objects:   3% (10/329)   
+ DEBUG [a9f58440] 	Receiving objects:   4% (14/329)   
+ DEBUG [a9f58440] 	Receiving objects:   5% (17/329)   
+ DEBUG [a9f58440] 	Receiving objects:   6% (20/329)   
+ DEBUG [a9f58440] 	Receiving objects:   7% (24/329)   
+ DEBUG [a9f58440] 	Receiving objects:   8% (27/329)   
+ DEBUG [a9f58440] 	Receiving objects:   9% (30/329)   
+ DEBUG [a9f58440] 	Receiving objects:  10% (33/329)   
+ DEBUG [a9f58440] 	Receiving objects:  11% (37/329)   
+ DEBUG [a9f58440] 	Receiving objects:  12% (40/329)   
+ DEBUG [a9f58440] 	Receiving objects:  13% (43/329)   
+ DEBUG [a9f58440] 	Receiving objects:  14% (47/329)   
+ DEBUG [a9f58440] 	Receiving objects:  15% (50/329)   
+ DEBUG [a9f58440] 	Receiving objects:  16% (53/329)   
+ DEBUG [a9f58440] 	Receiving objects:  17% (56/329)   
+ DEBUG [a9f58440] 	Receiving objects:  18% (60/329)   
+ DEBUG [a9f58440] 	Receiving objects:  19% (63/329)   
+ DEBUG [a9f58440] 	Receiving objects:  20% (66/329)   
+ DEBUG [a9f58440] 	Receiving objects:  21% (70/329)   
+ DEBUG [a9f58440] 	Receiving objects:  22% (73/329)   
+ DEBUG [a9f58440] 	Receiving objects:  23% (76/329)   
+ DEBUG [a9f58440] 	Receiving objects:  24% (79/329)   
+ DEBUG [a9f58440] 	Receiving objects:  25% (83/329)   
+ DEBUG [a9f58440] 	Receiving objects:  26% (86/329)   
+ DEBUG [a9f58440] 	Receiving objects:  27% (89/329)   
+ DEBUG [a9f58440] 	Receiving objects:  28% (93/329)   
+ DEBUG [a9f58440] 	Receiving objects:  29% (96/329)   
+ DEBUG [a9f58440] 	Receiving objects:  30% (99/329)   
+ DEBUG [a9f58440] 	Receiving objects:  31% (102/329)   
+ DEBUG [a9f58440] 	Receiving objects:  32% (106/329)   
+ DEBUG [a9f58440] 	Receiving objects:  33% (109/329)   
+ DEBUG [a9f58440] 	Receiving objects:  34% (112/329)   
+ DEBUG [a9f58440] 	Receiving objects:  35% (116/329)   
+ DEBUG [a9f58440] 	Receiving objects:  36% (119/329)   
+ DEBUG [a9f58440] 	Receiving objects:  37% (122/329)   
+ DEBUG [a9f58440] 	Receiving objects:  38% (126/329)   
+ DEBUG [a9f58440] 	Receiving objects:  39% (129/329)   
+ DEBUG [a9f58440] 	Receiving objects:  40% (132/329)   
+ DEBUG [a9f58440] 	Receiving objects:  41% (135/329)   
+ DEBUG [a9f58440] 	Receiving objects:  42% (139/329)   
+ DEBUG [a9f58440] 	Receiving objects:  43% (142/329)   
+ DEBUG [a9f58440] 	Receiving objects:  44% (145/329)   
+ DEBUG [a9f58440] 	Receiving objects:  45% (149/329)   
+ DEBUG [a9f58440] 	Receiving objects:  46% (152/329)   
+ DEBUG [a9f58440] 	Receiving objects:  47% (155/329)   
+ DEBUG [a9f58440] 	Receiving objects:  48% (158/329)   
+ DEBUG [a9f58440] 	Receiving objects:  49% (162/329)   
+ DEBUG [a9f58440] 	Receiving objects:  50% (165/329)   
+ DEBUG [a9f58440] 	Receiving objects:  51% (168/329)   
+ DEBUG [a9f58440] 	Receiving objects:  52% (172/329)   
+ DEBUG [a9f58440] 	Receiving objects:  53% (175/329)   
+ DEBUG [a9f58440] 	Receiving objects:  54% (178/329)   
+ DEBUG [a9f58440] 	Receiving objects:  55% (181/329)   
+ DEBUG [a9f58440] 	Receiving objects:  56% (185/329)   
+ DEBUG [a9f58440] 	Receiving objects:  57% (188/329)   
+ DEBUG [a9f58440] 	Receiving objects:  58% (191/329)   
+ DEBUG [a9f58440] 	Receiving objects:  59% (195/329)   
+ DEBUG [a9f58440] 	Receiving objects:  60% (198/329)   
+ DEBUG [a9f58440] 	Receiving objects:  61% (201/329)   
+ DEBUG [a9f58440] 	Receiving objects:  62% (204/329)   
+ DEBUG [a9f58440] 	Receiving objects:  63% (208/329)   
+ DEBUG [a9f58440] 	Receiving objects:  64% (211/329)   
+ DEBUG [a9f58440] 	Receiving objects:  65% (214/329)   
+ DEBUG [a9f58440] 	Receiving objects:  66% (218/329)   
+ DEBUG [a9f58440] 	Receiving objects:  67% (221/329)   
+ DEBUG [a9f58440] 	Receiving objects:  68% (224/329)   
+ DEBUG [a9f58440] 	Receiving objects:  69% (228/329)   
+ DEBUG [a9f58440] 	Receiving objects:  70% (231/329)   
+ DEBUG [a9f58440] 	Receiving objects:  71% (234/329)   
+ DEBUG [a9f58440] 	Receiving objects:  72% (237/329)   
+ DEBUG [a9f58440] 	Receiving objects:  73% (241/329)   
+ DEBUG [a9f58440] 	Receiving objects:  74% (244/329)   
+ DEBUG [a9f58440] 	Receiving objects:  75% (247/329)   
+ DEBUG [a9f58440] 	Receiving objects:  76% (251/329)   
+ DEBUG [a9f58440] 	Receiving objects:  77% (254/329)   
+ DEBUG [a9f58440] 	Receiving objects:  78% (257/329)   
+ DEBUG [a9f58440] 	Receiving objects:  79% (260/329)   
+ DEBUG [a9f58440] 	Receiving objects:  80% (264/329)   
+ DEBUG [a9f58440] 	Receiving objects:  81% (267/329)   
+ DEBUG [a9f58440] 	Receiving objects:  82% (270/329)   
+ DEBUG [a9f58440] 	Receiving objects:  83% (274/329)   
+ DEBUG [a9f58440] 	Receiving objects:  84% (277/329)   
+ DEBUG [a9f58440] 	remote: Total 329 (delta 19), reused 329 (delta 19), pack-reused 0[K
+ DEBUG [a9f58440] 	
+ DEBUG [a9f58440] 	Receiving objects:  85% (280/329)   
+ DEBUG [a9f58440] 	Receiving objects:  86% (283/329)   
+ DEBUG [a9f58440] 	Receiving objects:  87% (287/329)   
+ DEBUG [a9f58440] 	Receiving objects:  88% (290/329)   
+ DEBUG [a9f58440] 	Receiving objects:  89% (293/329)   
+ DEBUG [a9f58440] 	Receiving objects:  90% (297/329)   
+ DEBUG [a9f58440] 	Receiving objects:  91% (300/329)   
+ DEBUG [a9f58440] 	Receiving objects:  92% (303/329)   
+ DEBUG [a9f58440] 	Receiving objects:  93% (306/329)   
+ DEBUG [a9f58440] 	Receiving objects:  94% (310/329)   
+ DEBUG [a9f58440] 	Receiving objects:  95% (313/329)   
+ DEBUG [a9f58440] 	Receiving objects:  96% (316/329)   
+ DEBUG [a9f58440] 	Receiving objects:  97% (320/329)   
+ DEBUG [a9f58440] 	Receiving objects:  98% (323/329)   
+ DEBUG [a9f58440] 	Receiving objects:  99% (326/329)   
+ DEBUG [a9f58440] 	Receiving objects: 100% (329/329)   
+ DEBUG [a9f58440] 	Receiving objects: 100% (329/329), 237.21 KiB | 0 bytes/s, done.
+ DEBUG [a9f58440] 	
+ DEBUG [a9f58440] 	Resolving deltas:   0% (0/19)   
+ DEBUG [a9f58440] 	Resolving deltas:   5% (1/19)   
+ DEBUG [a9f58440] 	Resolving deltas:  15% (3/19)   
+ DEBUG [a9f58440] 	Resolving deltas:  31% (6/19)   
+ DEBUG [a9f58440] 	Resolving deltas:  42% (8/19)   
+ DEBUG [a9f58440] 	Resolving deltas:  52% (10/19)   
+ DEBUG [a9f58440] 	Resolving deltas:  73% (14/19)   
+ DEBUG [a9f58440] 	Resolving deltas:  78% (15/19)   
+ DEBUG [a9f58440] 	Resolving deltas:  84% (16/19)   
+ DEBUG [a9f58440] 	Resolving deltas: 100% (19/19)   
+ DEBUG [a9f58440] 	Resolving deltas: 100% (19/19), done.
+ DEBUG [a9f58440] 	
+ DEBUG [a9f58440] 	Checking connectivity... 
+ DEBUG [a9f58440] 	done.
+ DEBUG [a9f58440] 	
+  INFO [a9f58440] Finished in 2.106 seconds with exit status 0 (successful).
+ DEBUG [281ce4cf] Running if test ! -d /var/deploy/shorten_url/repo; then echo "Directory does not exist '/var/deploy/shorten_url/repo'" 1>&2; false; fi as ubuntu@18.191.255.97
+ DEBUG [281ce4cf] Command: if test ! -d /var/deploy/shorten_url/repo; then echo "Directory does not exist '/var/deploy/shorten_url/repo'" 1>&2; false; fi
+ DEBUG [052ce9bf] Finished in 1.111 seconds with exit status 0 (successful).
+  INFO [af7a99b3] Running /usr/bin/env git remote set-url origin https://github.com/nikhilagarwal1/shorten_url.git as ubuntu@18.191.255.97
+ DEBUG [af7a99b3] Command: cd /var/deploy/shorten_url/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-shorten_url-production-nikhilagarwal.sh" ; /usr/bin/env git remote set-url origin https://github.com/nikhilagarwal1/shorten_url.git )
+  INFO [af3f084c] Finished in 1.365 seconds with exit status 0 (successful).
+  INFO [08c27bf1] Running /usr/bin/env git remote update --prune as ubuntu@18.191.255.97
+ DEBUG [08c27bf1] Command: cd /var/deploy/shorten_url/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-shorten_url-production-nikhilagarwal.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [bf4bf2c7] 	Fetching origin
+ DEBUG [bf4bf2c7] 	
+  INFO [bf4bf2c7] Finished in 1.309 seconds with exit status 0 (successful).
+ DEBUG [b2de2da5] Running if test ! -d /var/deploy/shorten_url/repo; then echo "Directory does not exist '/var/deploy/shorten_url/repo'" 1>&2; false; fi as ubuntu@18.191.255.97
+ DEBUG [b2de2da5] Command: if test ! -d /var/deploy/shorten_url/repo; then echo "Directory does not exist '/var/deploy/shorten_url/repo'" 1>&2; false; fi
+ DEBUG [2cf043f5] Finished in 1.158 seconds with exit status 0 (successful).
+  INFO [1ae6a01f] Running /usr/bin/env mkdir -p /var/deploy/shorten_url/releases/20180814114015 as ubuntu@18.191.255.97
+ DEBUG [1ae6a01f] Command: cd /var/deploy/shorten_url/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-shorten_url-production-nikhilagarwal.sh" ; /usr/bin/env mkdir -p /var/deploy/shorten_url/releases/20180814114015 )
+  INFO [aa919702] Finished in 1.331 seconds with exit status 0 (successful).
+  INFO [439e2e44] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/deploy/shorten_url/releases/20180814114015 as ubuntu@18.191.255.97
+ DEBUG [439e2e44] Command: cd /var/deploy/shorten_url/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-shorten_url-production-nikhilagarwal.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/deploy/shorten_url/releases/20180814114015 )
+  INFO [8eae32ea] Finished in 1.113 seconds with exit status 0 (successful).
+ DEBUG [1b639e09] Running if test ! -d /var/deploy/shorten_url/repo; then echo "Directory does not exist '/var/deploy/shorten_url/repo'" 1>&2; false; fi as ubuntu@18.191.255.97
+ DEBUG [1b639e09] Command: if test ! -d /var/deploy/shorten_url/repo; then echo "Directory does not exist '/var/deploy/shorten_url/repo'" 1>&2; false; fi
+ DEBUG [b66aae5b] Finished in 1.376 seconds with exit status 0 (successful).
+ DEBUG [3e078bf8] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@18.191.255.97
+ DEBUG [3e078bf8] Command: cd /var/deploy/shorten_url/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-shorten_url-production-nikhilagarwal.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [7f03b856] 	b04704410eac5a4e9e0bf3e4a3feb7ddc5fca201
+ DEBUG [7f03b856] 	
+ DEBUG [7f03b856] Finished in 1.310 seconds with exit status 0 (successful).
+ DEBUG [14d91ee8] Running if test ! -d /var/deploy/shorten_url/releases/20180814114015; then echo "Directory does not exist '/var/deploy/shorten_url/releases/20180814114015'" 1>&2; false; fi as ubuntu@18.191.255.97
+ DEBUG [14d91ee8] Command: if test ! -d /var/deploy/shorten_url/releases/20180814114015; then echo "Directory does not exist '/var/deploy/shorten_url/releases/20180814114015'" 1>&2; false; fi
+ DEBUG [508f83ab] Finished in 1.065 seconds with exit status 0 (successful).
+  INFO [d1f12417] Running /usr/bin/env echo "b04704410eac5a4e9e0bf3e4a3feb7ddc5fca201" > REVISION as ubuntu@18.191.255.97
+ DEBUG [d1f12417] Command: cd /var/deploy/shorten_url/releases/20180814114015 && /usr/bin/env echo "b04704410eac5a4e9e0bf3e4a3feb7ddc5fca201" > REVISION
+  INFO [8907f949] Finished in 1.072 seconds with exit status 0 (successful).
+  INFO [9ba5d24b] Running /usr/bin/env mkdir -p /var/deploy/shorten_url/releases/20180814114015 /var/deploy/shorten_url/releases/20180814114015/tmp /var/deploy/shorten_url/releases/20180814114015/public as ubuntu@18.191.255.97
+ DEBUG [9ba5d24b] Command: /usr/bin/env mkdir -p /var/deploy/shorten_url/releases/20180814114015 /var/deploy/shorten_url/releases/20180814114015/tmp /var/deploy/shorten_url/releases/20180814114015/public
+  INFO [30af7742] Finished in 1.094 seconds with exit status 0 (successful).
+ DEBUG [1500f1f4] Running [ -L /var/deploy/shorten_url/releases/20180814114015/log ] as ubuntu@18.191.255.97
+ DEBUG [1500f1f4] Command: [ -L /var/deploy/shorten_url/releases/20180814114015/log ]
+ DEBUG [f1149faa] Finished in 2.062 seconds with exit status 1 (failed).
+ DEBUG [922173ab] Running [ -d /var/deploy/shorten_url/releases/20180814114015/log ] as ubuntu@18.191.255.97
+ DEBUG [922173ab] Command: [ -d /var/deploy/shorten_url/releases/20180814114015/log ]
+ DEBUG [2005bf1e] Finished in 1.389 seconds with exit status 0 (successful).
+  INFO [cbbd94e3] Running /usr/bin/env rm -rf /var/deploy/shorten_url/releases/20180814114015/log as ubuntu@18.191.255.97
+ DEBUG [cbbd94e3] Command: /usr/bin/env rm -rf /var/deploy/shorten_url/releases/20180814114015/log
+  INFO [97634ead] Finished in 1.047 seconds with exit status 0 (successful).
+  INFO [6a95c6cc] Running /usr/bin/env ln -s /var/deploy/shorten_url/shared/log /var/deploy/shorten_url/releases/20180814114015/log as ubuntu@18.191.255.97
+ DEBUG [6a95c6cc] Command: /usr/bin/env ln -s /var/deploy/shorten_url/shared/log /var/deploy/shorten_url/releases/20180814114015/log
+  INFO [f54c3e61] Finished in 1.134 seconds with exit status 0 (successful).
+ DEBUG [0259b248] Running [ -L /var/deploy/shorten_url/releases/20180814114015/tmp/pids ] as ubuntu@18.191.255.97
+ DEBUG [0259b248] Command: [ -L /var/deploy/shorten_url/releases/20180814114015/tmp/pids ]
+ DEBUG [9a20d292] Finished in 1.289 seconds with exit status 1 (failed).
+ DEBUG [ba1646f5] Running [ -d /var/deploy/shorten_url/releases/20180814114015/tmp/pids ] as ubuntu@18.191.255.97
+ DEBUG [ba1646f5] Command: [ -d /var/deploy/shorten_url/releases/20180814114015/tmp/pids ]
+ DEBUG [5615ff34] Finished in 1.377 seconds with exit status 0 (successful).
+  INFO [26d6e161] Running /usr/bin/env rm -rf /var/deploy/shorten_url/releases/20180814114015/tmp/pids as ubuntu@18.191.255.97
+ DEBUG [26d6e161] Command: /usr/bin/env rm -rf /var/deploy/shorten_url/releases/20180814114015/tmp/pids
+  INFO [7c9959a7] Finished in 1.437 seconds with exit status 0 (successful).
+  INFO [c496968f] Running /usr/bin/env ln -s /var/deploy/shorten_url/shared/tmp/pids /var/deploy/shorten_url/releases/20180814114015/tmp/pids as ubuntu@18.191.255.97
+ DEBUG [c496968f] Command: /usr/bin/env ln -s /var/deploy/shorten_url/shared/tmp/pids /var/deploy/shorten_url/releases/20180814114015/tmp/pids
+  INFO [9a6866a5] Finished in 1.092 seconds with exit status 0 (successful).
+ DEBUG [265995c2] Running [ -L /var/deploy/shorten_url/releases/20180814114015/tmp/cache ] as ubuntu@18.191.255.97
+ DEBUG [265995c2] Command: [ -L /var/deploy/shorten_url/releases/20180814114015/tmp/cache ]
+ DEBUG [f9cc97a5] Finished in 1.280 seconds with exit status 1 (failed).
+ DEBUG [33a2041f] Running [ -d /var/deploy/shorten_url/releases/20180814114015/tmp/cache ] as ubuntu@18.191.255.97
+ DEBUG [33a2041f] Command: [ -d /var/deploy/shorten_url/releases/20180814114015/tmp/cache ]
+ DEBUG [0363c015] Finished in 1.097 seconds with exit status 0 (successful).
+  INFO [d630ee9c] Running /usr/bin/env rm -rf /var/deploy/shorten_url/releases/20180814114015/tmp/cache as ubuntu@18.191.255.97
+ DEBUG [d630ee9c] Command: /usr/bin/env rm -rf /var/deploy/shorten_url/releases/20180814114015/tmp/cache
+  INFO [a77ebaab] Finished in 1.155 seconds with exit status 0 (successful).
+  INFO [80cfd4ef] Running /usr/bin/env ln -s /var/deploy/shorten_url/shared/tmp/cache /var/deploy/shorten_url/releases/20180814114015/tmp/cache as ubuntu@18.191.255.97
+ DEBUG [80cfd4ef] Command: /usr/bin/env ln -s /var/deploy/shorten_url/shared/tmp/cache /var/deploy/shorten_url/releases/20180814114015/tmp/cache
+  INFO [1f0a05d8] Finished in 1.024 seconds with exit status 0 (successful).
+ DEBUG [ee431c10] Running [ -L /var/deploy/shorten_url/releases/20180814114015/tmp/sockets ] as ubuntu@18.191.255.97
+ DEBUG [ee431c10] Command: [ -L /var/deploy/shorten_url/releases/20180814114015/tmp/sockets ]
+ DEBUG [1c316cc8] Finished in 1.027 seconds with exit status 1 (failed).
+ DEBUG [8365324a] Running [ -d /var/deploy/shorten_url/releases/20180814114015/tmp/sockets ] as ubuntu@18.191.255.97
+ DEBUG [8365324a] Command: [ -d /var/deploy/shorten_url/releases/20180814114015/tmp/sockets ]
+ DEBUG [e8ed2de0] Finished in 1.030 seconds with exit status 1 (failed).
+  INFO [6f08079e] Running /usr/bin/env ln -s /var/deploy/shorten_url/shared/tmp/sockets /var/deploy/shorten_url/releases/20180814114015/tmp/sockets as ubuntu@18.191.255.97
+ DEBUG [6f08079e] Command: /usr/bin/env ln -s /var/deploy/shorten_url/shared/tmp/sockets /var/deploy/shorten_url/releases/20180814114015/tmp/sockets
+  INFO [ab7ad209] Finished in 2.241 seconds with exit status 0 (successful).
+ DEBUG [7d9a5f2d] Running [ -L /var/deploy/shorten_url/releases/20180814114015/public/system ] as ubuntu@18.191.255.97
+ DEBUG [7d9a5f2d] Command: [ -L /var/deploy/shorten_url/releases/20180814114015/public/system ]
+ DEBUG [aca3e8f3] Finished in 1.145 seconds with exit status 1 (failed).
+ DEBUG [e5d94a19] Running [ -d /var/deploy/shorten_url/releases/20180814114015/public/system ] as ubuntu@18.191.255.97
+ DEBUG [e5d94a19] Command: [ -d /var/deploy/shorten_url/releases/20180814114015/public/system ]
+ DEBUG [a90f2d0f] Finished in 1.028 seconds with exit status 1 (failed).
+  INFO [427f02c4] Running /usr/bin/env ln -s /var/deploy/shorten_url/shared/public/system /var/deploy/shorten_url/releases/20180814114015/public/system as ubuntu@18.191.255.97
+ DEBUG [427f02c4] Command: /usr/bin/env ln -s /var/deploy/shorten_url/shared/public/system /var/deploy/shorten_url/releases/20180814114015/public/system
+  INFO [43db70dd] Finished in 1.308 seconds with exit status 0 (successful).
+ DEBUG [8b58c38d] Running [ -L /var/deploy/shorten_url/releases/20180814114015/public/uploads ] as ubuntu@18.191.255.97
+ DEBUG [8b58c38d] Command: [ -L /var/deploy/shorten_url/releases/20180814114015/public/uploads ]
+ DEBUG [cecab3fa] Finished in 1.329 seconds with exit status 1 (failed).
+ DEBUG [f5bb5421] Running [ -d /var/deploy/shorten_url/releases/20180814114015/public/uploads ] as ubuntu@18.191.255.97
+ DEBUG [f5bb5421] Command: [ -d /var/deploy/shorten_url/releases/20180814114015/public/uploads ]
+ DEBUG [bbc12f9b] Finished in 1.018 seconds with exit status 1 (failed).
+  INFO [4147cbb1] Running /usr/bin/env ln -s /var/deploy/shorten_url/shared/public/uploads /var/deploy/shorten_url/releases/20180814114015/public/uploads as ubuntu@18.191.255.97
+ DEBUG [4147cbb1] Command: /usr/bin/env ln -s /var/deploy/shorten_url/shared/public/uploads /var/deploy/shorten_url/releases/20180814114015/public/uploads
+  INFO [41f4fedd] Finished in 1.012 seconds with exit status 0 (successful).
+ DEBUG [a5256ab2] Running [ -L /var/deploy/shorten_url/releases/20180814114015/public/assets ] as ubuntu@18.191.255.97
+ DEBUG [a5256ab2] Command: [ -L /var/deploy/shorten_url/releases/20180814114015/public/assets ]
+ DEBUG [92ca9852] Finished in 1.014 seconds with exit status 1 (failed).
+ DEBUG [9ad778cf] Running [ -d /var/deploy/shorten_url/releases/20180814114015/public/assets ] as ubuntu@18.191.255.97
+ DEBUG [9ad778cf] Command: [ -d /var/deploy/shorten_url/releases/20180814114015/public/assets ]
+ DEBUG [000a9c31] Finished in 1.153 seconds with exit status 1 (failed).
+  INFO [4cad5776] Running /usr/bin/env ln -s /var/deploy/shorten_url/shared/public/assets /var/deploy/shorten_url/releases/20180814114015/public/assets as ubuntu@18.191.255.97
+ DEBUG [4cad5776] Command: /usr/bin/env ln -s /var/deploy/shorten_url/shared/public/assets /var/deploy/shorten_url/releases/20180814114015/public/assets
+  INFO [7266b781] Finished in 1.150 seconds with exit status 0 (successful).
+ DEBUG [a1204525] Running if test ! -d /var/deploy/shorten_url/releases/20180814114015; then echo "Directory does not exist '/var/deploy/shorten_url/releases/20180814114015'" 1>&2; false; fi as ubuntu@18.191.255.97
+ DEBUG [a1204525] Command: if test ! -d /var/deploy/shorten_url/releases/20180814114015; then echo "Directory does not exist '/var/deploy/shorten_url/releases/20180814114015'" 1>&2; false; fi
+ DEBUG [5103c098] Finished in 1.137 seconds with exit status 0 (successful).
+ DEBUG [72a411ef] Running ~/.rvm/bin/rvm default do bundle check --path /var/deploy/shorten_url/shared/bundle as ubuntu@18.191.255.97
+ DEBUG [72a411ef] Command: cd /var/deploy/shorten_url/releases/20180814114015 && ~/.rvm/bin/rvm default do bundle check --path /var/deploy/shorten_url/shared/bundle
+ DEBUG [4af620d0] 	[31mhttps://github.com/plataformatec/simple_form.git (at master@3a99d65) is not yet
+ DEBUG [4af620d0] 	
+ DEBUG [4af620d0] 	checked out. Run `bundle install` first.[0m
+ DEBUG [4af620d0] Finished in 2.055 seconds with exit status 11 (failed).
+  INFO [21b81854] Running ~/.rvm/bin/rvm default do bundle install --path /var/deploy/shorten_url/shared/bundle --without development test --deployment as ubuntu@18.191.255.97
+ DEBUG [21b81854] Command: cd /var/deploy/shorten_url/releases/20180814114015 && ~/.rvm/bin/rvm default do bundle install --path /var/deploy/shorten_url/shared/bundle --without development test --deployment
+ DEBUG [dd84a5c3] 	Fetching gem metadata from https://rubygems.org/
+ DEBUG [dd84a5c3] 	.
+ DEBUG [dd84a5c3] 	.
+ DEBUG [dd84a5c3] 	.
+ DEBUG [dd84a5c3] 	.
+ DEBUG [dd84a5c3] 	.
+ DEBUG [dd84a5c3] 	.
+ DEBUG [dd84a5c3] 	.
+ DEBUG [dd84a5c3] 	.
+ DEBUG [dd84a5c3] 	.
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching https://github.com/plataformatec/simple_form.git
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching rake 12.3.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing rake 12.3.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching concurrent-ruby 1.0.5
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing concurrent-ruby 1.0.5
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching i18n 1.0.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing i18n 1.0.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching minitest 5.11.3
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing minitest 5.11.3
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching thread_safe 0.3.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing thread_safe 0.3.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching tzinfo 1.2.5
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing tzinfo 1.2.5
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching activesupport 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing activesupport 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching builder 3.2.3
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing builder 3.2.3
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching erubi 1.7.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing erubi 1.7.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching mini_portile2 2.3.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing mini_portile2 2.3.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching nokogiri 1.8.4
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing nokogiri 1.8.4 with native extensions
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching rails-dom-testing 2.0.3
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing rails-dom-testing 2.0.3
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching crass 1.0.4
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing crass 1.0.4
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching loofah 2.2.2
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing loofah 2.2.2
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching rails-html-sanitizer 1.0.4
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing rails-html-sanitizer 1.0.4
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching actionview 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing actionview 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching rack 2.0.5
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing rack 2.0.5
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching rack-test 1.0.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing rack-test 1.0.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching actionpack 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing actionpack 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching nio4r 2.3.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing nio4r 2.3.1 with native extensions
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching websocket-extensions 0.1.3
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing websocket-extensions 0.1.3
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching websocket-driver 0.6.5
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing websocket-driver 0.6.5 with native extensions
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching actioncable 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing actioncable 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching globalid 0.4.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing globalid 0.4.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching activejob 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing activejob 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching mini_mime 1.0.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing mini_mime 1.0.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching mail 2.7.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing mail 2.7.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching actionmailer 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing actionmailer 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching activemodel 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing activemodel 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching arel 8.0.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing arel 8.0.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching activerecord 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing activerecord 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Using bundler 1.16.3
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching coffee-script-source 1.12.2
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing coffee-script-source 1.12.2
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching execjs 2.7.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing execjs 2.7.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching coffee-script 2.4.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing coffee-script 2.4.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching method_source 0.9.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing method_source 0.9.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching thor 0.20.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing thor 0.20.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching railties 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing railties 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching coffee-rails 4.2.2
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing coffee-rails 4.2.2
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching ffi 1.9.25
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing ffi 1.9.25 with native extensions
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching multi_json 1.13.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing multi_json 1.13.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching jbuilder 2.7.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing jbuilder 2.7.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching pg 1.0.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing pg 1.0.0 with native extensions
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching puma 3.12.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing puma 3.12.0 with native extensions
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching sprockets 3.7.2
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing sprockets 3.7.2
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching sprockets-rails 3.2.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing sprockets-rails 3.2.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching rails 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing rails 5.1.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching rb-fsevent 0.10.3
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing rb-fsevent 0.10.3
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching rb-inotify 0.9.10
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing rb-inotify 0.9.10
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching sass-listen 4.0.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing sass-listen 4.0.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching sass 3.5.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing sass 3.5.6
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching tilt 2.0.8
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing tilt 2.0.8
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching sass-rails 5.0.7
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing sass-rails 5.0.7
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Using simple_form 4.0.1 from https://github.com/plataformatec/simple_form.git (at master@3a99d65)
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching turbolinks-source 5.1.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing turbolinks-source 5.1.0
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching turbolinks 5.1.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing turbolinks 5.1.1
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Fetching uglifier 4.1.15
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Installing uglifier 4.1.15
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Bundle complete! 24 Gemfile dependencies, 57 gems now installed.
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Gems in the groups development and test were not installed.
+ DEBUG [dd84a5c3] 	
+ DEBUG [dd84a5c3] 	Bundled gems are installed into `/var/deploy/shorten_url/shared/bundle`
+ DEBUG [dd84a5c3] 	
+  INFO [dd84a5c3] Finished in 62.930 seconds with exit status 0 (successful).
+ DEBUG [98ea3ee3] Running if test ! -d /var/deploy/shorten_url/releases/20180814114015; then echo "Directory does not exist '/var/deploy/shorten_url/releases/20180814114015'" 1>&2; false; fi as ubuntu@18.191.255.97
+ DEBUG [98ea3ee3] Command: if test ! -d /var/deploy/shorten_url/releases/20180814114015; then echo "Directory does not exist '/var/deploy/shorten_url/releases/20180814114015'" 1>&2; false; fi
+ DEBUG [b83e2560] Finished in 1.126 seconds with exit status 0 (successful).
+  INFO [25693300] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile as ubuntu@18.191.255.97
+ DEBUG [25693300] Command: cd /var/deploy/shorten_url/releases/20180814114015 && ( export RAILS_ENV="production" RAILS_GROUPS="" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [bbf019f6] 	[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+ DEBUG [bbf019f6] 	
+ DEBUG [bbf019f6] 	Yarn executable was not detected in the system.
+ DEBUG [bbf019f6] 	
+ DEBUG [bbf019f6] 	Download Yarn at https://yarnpkg.com/en/docs/install
+ DEBUG [bbf019f6] 	
+ DEBUG [bbf019f6] 	I, [2018-08-14T11:42:15.889293 #2104]  INFO -- : Writing /var/deploy/shorten_url/releases/20180814114015/public/assets/application-f4c254a0ad55df7194ea12b7a69812d463064b555eeeabc7a4bde99dce9d22eb.js
+ DEBUG [bbf019f6] 	
+ DEBUG [bbf019f6] 	I, [2018-08-14T11:42:15.889837 #2104]  INFO -- : Writing /var/deploy/shorten_url/releases/20180814114015/public/assets/application-f4c254a0ad55df7194ea12b7a69812d463064b555eeeabc7a4bde99dce9d22eb.js.gz
+ DEBUG [bbf019f6] 	
+ DEBUG [bbf019f6] 	I, [2018-08-14T11:42:15.932298 #2104]  INFO -- : Writing /var/deploy/shorten_url/releases/20180814114015/public/assets/application-35729bfbaf9967f119234595ed222f7ab14859f304ab0acc5451afb387f637fa.css
+ DEBUG [bbf019f6] 	
+ DEBUG [bbf019f6] 	I, [2018-08-14T11:42:15.932792 #2104]  INFO -- : Writing /var/deploy/shorten_url/releases/20180814114015/public/assets/application-35729bfbaf9967f119234595ed222f7ab14859f304ab0acc5451afb387f637fa.css.gz
+ DEBUG [bbf019f6] 	
+  INFO [bbf019f6] Finished in 5.464 seconds with exit status 0 (successful).
+ DEBUG [b4648cfc] Running if test ! -d /var/deploy/shorten_url/releases/20180814114015; then echo "Directory does not exist '/var/deploy/shorten_url/releases/20180814114015'" 1>&2; false; fi as ubuntu@18.191.255.97
+ DEBUG [b4648cfc] Command: if test ! -d /var/deploy/shorten_url/releases/20180814114015; then echo "Directory does not exist '/var/deploy/shorten_url/releases/20180814114015'" 1>&2; false; fi
+ DEBUG [89c360f0] Finished in 1.291 seconds with exit status 0 (successful).
+  INFO [d1371741] Running /usr/bin/env mkdir -p /var/deploy/shorten_url/releases/20180814114015/assets_manifest_backup as ubuntu@18.191.255.97
+ DEBUG [d1371741] Command: cd /var/deploy/shorten_url/releases/20180814114015 && /usr/bin/env mkdir -p /var/deploy/shorten_url/releases/20180814114015/assets_manifest_backup
+  INFO [eb56707b] Finished in 1.097 seconds with exit status 0 (successful).
+ DEBUG [d90fdb4f] Running /usr/bin/env ls /var/deploy/shorten_url/releases/20180814114015/public/assets/.sprockets-manifest* as ubuntu@18.191.255.97
+ DEBUG [d90fdb4f] Command: cd /var/deploy/shorten_url/releases/20180814114015 && /usr/bin/env ls /var/deploy/shorten_url/releases/20180814114015/public/assets/.sprockets-manifest*
+ DEBUG [9c13b54a] 	/var/deploy/shorten_url/releases/20180814114015/public/assets/.sprockets-manifest-dd514c0077c0068750fbb3e989e05469.json
+ DEBUG [9c13b54a] 	
+ DEBUG [9c13b54a] Finished in 1.283 seconds with exit status 0 (successful).
+ DEBUG [b8bceff7] Running /usr/bin/env ls /var/deploy/shorten_url/releases/20180814114015/public/assets/.sprockets-manifest* as ubuntu@18.191.255.97
+ DEBUG [b8bceff7] Command: cd /var/deploy/shorten_url/releases/20180814114015 && /usr/bin/env ls /var/deploy/shorten_url/releases/20180814114015/public/assets/.sprockets-manifest*
+ DEBUG [12a644c1] 	/var/deploy/shorten_url/releases/20180814114015/public/assets/.sprockets-manifest-dd514c0077c0068750fbb3e989e05469.json
+ DEBUG [12a644c1] 	
+ DEBUG [12a644c1] Finished in 1.144 seconds with exit status 0 (successful).
+  INFO [e96743d0] Running /usr/bin/env cp /var/deploy/shorten_url/releases/20180814114015/public/assets/.sprockets-manifest-dd514c0077c0068750fbb3e989e05469.json /var/deploy/shorten_url/releases/20180814114015/assets_manifest_backup as ubuntu@18.191.255.97
+ DEBUG [e96743d0] Command: cd /var/deploy/shorten_url/releases/20180814114015 && /usr/bin/env cp /var/deploy/shorten_url/releases/20180814114015/public/assets/.sprockets-manifest-dd514c0077c0068750fbb3e989e05469.json /var/deploy/shorten_url/releases/20180814114015/assets_manifest_backup
+  INFO [c8f4afcb] Finished in 1.387 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [6cbcaa5f] Running if test ! -d /var/deploy/shorten_url/releases/20180814114015; then echo "Directory does not exist '/var/deploy/shorten_url/releases/20180814114015'" 1>&2; false; fi as ubuntu@18.191.255.97
+ DEBUG [6cbcaa5f] Command: if test ! -d /var/deploy/shorten_url/releases/20180814114015; then echo "Directory does not exist '/var/deploy/shorten_url/releases/20180814114015'" 1>&2; false; fi
+ DEBUG [28c3bac4] Finished in 1.160 seconds with exit status 0 (successful).
+  INFO [8a6d57a4] Running ~/.rvm/bin/rvm default do bundle exec rake db:migrate as ubuntu@18.191.255.97
+ DEBUG [8a6d57a4] Command: cd /var/deploy/shorten_url/releases/20180814114015 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake db:migrate )
+ DEBUG [0f670bdb] 	[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	rake aborted!
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	ActiveRecord::NoDatabaseError: FATAL:  role "ubuntu" does not exist
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `rescue in connect'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:697:in `connect'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:221:in `initialize'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_handling.r
+ DEBUG [0f670bdb] 	b:116:in `retrieve_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_handling.rb:88:in `connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/schema_migration.rb:20:in `table_exists?'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/schema_migration.rb:24:in `create_table'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/migration.rb:1125:in `initialize'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/migration.rb:1007:in `new'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/migration.rb:1007:in `up'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/migration.rb:985:in `migrate'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/tasks/database_tasks.rb:171:in `migrate'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/railties/databases.rake:58:in `block (2 levels) in <top (required)>'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/rake-12.3.1/exe/rake:27:in `<top (required)>'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/cli/exec.rb:74:in `load'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/cli/exec.rb:74:in `kernel_load'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/cli/exec.rb:28:in `run'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/cli.rb:424:in `exec'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gem
+ DEBUG [0f670bdb] 	s/bundler-1.16.3/lib/bundler/cli.rb:27:in `dispatch'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/cli.rb:18:in `start'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/exe/bundle:30:in `block in <top (required)>'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/exe/bundle:22:in `<top (required)>'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/bin/bundle:22:in `load'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/bin/bundle:22:in `<main>'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `eval'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `<main>'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	Caused by:
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	PG::ConnectionBad: FATAL:  role "ubuntu" does not exist
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/pg-1.0.0/lib/pg.rb:56:in `initialize'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/pg-1.0.0/lib/pg.rb:56:in `new'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/pg-1.0.0/lib/pg.rb:56:in `connect'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:697:in `connect'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:221:in `initialize'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/d
+ DEBUG [0f670bdb] 	eploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/connection_handling.rb:88:in `connection'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/schema_migration.rb:20:in `table_exists?'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/schema_migration.rb:24:in `create_table'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/migration.rb:1125:in `initialize'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/migration.rb:1007:in `new'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/migration.rb:1007:in `up'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/migration.rb:985:in `migrate'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/tasks/database_tasks.rb:171:in `migrate'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/activerecord-5.1.6/lib/active_record/railties/databases.rake:58:in `block (2 levels) in <top (required)>'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/var/deploy/shorten_url/shared/bundle/ruby/2.4.0/gems/rake-12.3.1/exe/rake:27:in `<top (required)>'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/cli/exec.rb:74:in `load'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/cli/exec.rb:74:in `kernel_load'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/cli/exec.rb:28:in `run'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/cli.rb:424:in `exec'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/
+ DEBUG [0f670bdb] 	bundler-1.16.3/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/cli.rb:27:in `dispatch'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/cli.rb:18:in `start'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/exe/bundle:30:in `block in <top (required)>'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/gems/bundler-1.16.3/exe/bundle:22:in `<top (required)>'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/bin/bundle:22:in `load'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/bin/bundle:22:in `<main>'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `eval'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	/home/ubuntu/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `<main>'
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	Tasks: TOP => db:migrate
+ DEBUG [0f670bdb] 	
+ DEBUG [0f670bdb] 	(See full trace by running task with --trace)
+ DEBUG [0f670bdb] 	
