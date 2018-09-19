@@ -23,8 +23,8 @@
           <td>
             <%= link_to 'Show', shortener %>
             |
-            \#{link_to 'Edit', edit_shortener_path(shortener)} |
-            \#{link_to 'Destroy', shortener, method: :delete, data: { confirm: 'Are you sure?' }}
+            <%= link_to 'Edit', edit_shortener_path(shortener) %> |
+            <%= link_to 'Destroy', shortener, method: :delete, data: { confirm: 'Are you sure?' }%>
           </td>
         </tr>
       <% end %>
